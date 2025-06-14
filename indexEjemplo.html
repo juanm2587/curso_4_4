@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="favicon" href="../../../Desktop/wallpapers/idea.png">
+  <title>Curso 4</title>
+</head>
+<body>
+  <!--Titutlos: pueden ser h1,h2... h6-->
+  <h1>Curso 4</h1>
+
+  <!--Listas: pueden ser ordenadas/desordenadas-->
+  <h2>Lista de alumnos</h2>
+  <p>Listas Desordenadas</p><!--p es la etiqueta que se usa para parrafo-->
+  <ul>
+    <li>Lunes</li>
+    <li>Martes</li>
+    <li>Miercoles</li>
+  </ul>
+  <p>Listas Ordenadas</p>
+  <ol>
+    <li>Enero</li>
+    <li>Febrero</li>
+    <li>Marzo</li>
+  </ol>
+
+  <p>Lista anidada</p>
+  <ul>
+    <li>Lenguajes de programación
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <ul>
+          <li>React</li>
+          <li>Vue.js</li>
+          <li>Angular</li>
+        </ul>
+        <li>Java</li>
+      </ul>
+    </li>
+    <li>Sistemas operativos
+      <ul>
+        <li>Windows</li>
+        <li>Linux</li>
+        <li>macOS</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!--Enlaces-->
+  <p>Ahora quiero hacer un enlace usamos la atiqueta "a"</p>  
+  <a href="">Voy a la seccion: .....</a><!--En las comillas va la ruta del archivo a donde voy-->
+  <!-- Rutas Absolutas: puede ser el dominio de una web o un archivo partiendo desde la raiz-->
+  <!--Ruta Relativa: direccion desde donde estoy, por lo general se toma la carpeta del proyecto como una raiz-->
+
+  <!--Multimedia-->
+  <!--Puedo usar imagenes, audios, videos, iframe-->
+  <img src="./kanagawa" alt="ola kanagawa" width="" height=""><!--src es la ruta de la imagen, alt es el texto alternativo que se muestra si no se carga la imagen
+  Tambien puedo usar un favicon me permite poner un icono en la pestaña del navegador:
+  Los pasos para colocarlo son los siguientes:
+1. Buscar o crear una imagen .png
+2. Ingresar en https://convertico.com/
+3. Seleccionar el archivo, convertirlo y descargarlo
+4. En el head colocar la referencia con: link
+rel="icon" href="nombredelarchivo.ico"-->
+
+  <video src="">mensaje para mostrar en la seccion video</video><!--src es la ruta del video-->
+
+  <audio src=""></audio><!--src es la ruta del audio, si no se coloca el atributo controls no se podra reproducir el audio-->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.627135684019!2d-58.5315146!3d-34.6217306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc82056fe6581%3A0x93ca48cabe90dbd1!2sEscuela%20Media%202%20DE%2017%20%22Rumania%22!5e0!3m2!1ses-419!2sar!4v1718380000000!5m2!1ses-419!2sar"
+  width="600"
+  height="450"
+  style="border:0;" title="Descripción del contenido">iframe para mostrar</iframe><!--src es la ruta del iframe, width y height son el tamaño del iframe, title es una descripcion del contenido-->
+  
+  <!-- Tablas-->
+  <!--<table>: Las Representa a todo el elemento tabla.
+  <tr>: Table row: representa una fila o registro.
+  <td>: Table data cell: representa a cada celda.
+  <th>: Table header: representa a una celda de encabezado.-->
+  <table border="5"><!-- con el atributo border especifico el grosor de la linea del borde-->
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Curso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ana</td>
+        <td>20</td>
+        <td>Curso 4</td>
+      </tr>
+      <tr>
+        <td>Juan</td>
+        <td>22</td>
+        <td>Curso 4</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>21</td>
+        <td>Curso 4</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--Colspan y Rowspan
+Son atributos que permiten que una celda ocupe más de una columna o más de una fila. 
+Es lo que comúnmente llamamos “combinar celdas”. 
+Las columnas (td) siempre van dentro de las filas (tr). Si queremos agrupar celdas de una misma celda o columna hay que agregar los siguientes atributos:
+● colspan (column span = número de celdas a abarcar)
+● rowspan (row span = número de celdas a abarcar).
+-->
+  
+
+  
+  <p>Ahora quiero hacer un formulario para que los alumnos se registren</p>
+  <form action="/submit" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="course">Curso:</label>
+    <select id="course" name="course">
+      <option value="curso4">Curso 4</option>
+      <option value="curso5">Curso 5</option>
+      <option value="curso6">Curso 6</option>
+    </select>
+    <br>
+    <button type="submit">Registrarse</button>
+  </form>
+  <p>Ahora quiero hacer un enlace a mi perfil de GitHub</p>
+
+  
+
+</body>
+</html>
